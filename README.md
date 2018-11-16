@@ -11,6 +11,7 @@ Inspiration and guidance for setting this up came from [minimal-react-webpack-ba
 * React 16
 * Webpack 4
 * Babel 7
+* Express
 
 ## Installation
 * `git clone git@github.com:Dikvega/react-minimal.git`
