@@ -1,0 +1,3 @@
+#files to ignore when pushing project to git
+
+/node_modules/*
