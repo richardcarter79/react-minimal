@@ -18,7 +18,7 @@ Inspiration and guidance for setting this up came from [minimal-react-webpack-ba
 * cd react-minimal
 * npm install
 * npm run dev
-* visit `http://localhost:3000`
+* visit `[http://localhost:3000]`(http://localhost:3000)
 
 
 ## Introduction
