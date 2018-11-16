@@ -1,16 +1,22 @@
-'use strict';
-let express = require('express');
-let app = express();
-let path = require('path');
+const express = require('express');
+// const path = require('path');
+const os = require('os');
 
-const port = 3000;
-//middleware to define folder for static files
+const app = express();
+
+
+const port = 8080;
+//  middleware to define folder for static files
 app.use(express.static('dist'));
 
-app.get('/', function(req, res){
+/* app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+}); */
+
+app.get('/api/getUsername', (req, res) => {
+  res.send({ username: os.userInfo().username });
 });
 
-app.listen(port, function() {
-  console.log(`listening on port: ${port}`)
+app.listen(port, () => {
+  console.log(`listening on port: ${port}`);
 });

@@ -2,28 +2,47 @@
   "name": "react_minimal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --mode production",
+    "start": "npm run build && node backend/server.js",
+    "client": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "server": "nodemon backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Richard Carter",
   "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.9.0",
+    "express": "^4.16.4",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
-    "express": "^4.16.4",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.6",
     "react-hot-loader": "^4.3.12",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
-  },
-  "dependencies": {
-    "eslint": "^5.9.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
   }
 }

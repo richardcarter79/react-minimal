@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-const title = 'React Minimal';
+ReactDOM.render(<App />, document.getElementById('app'));
 
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('app')
-);
-
-module.hot.accept();
+// module.hot.accept();

@@ -1,3 +1,7 @@
 #files to ignore when pushing project to git
 
 /node_modules/*
+.vscode
+*.log
+dist
+package-lock.json
