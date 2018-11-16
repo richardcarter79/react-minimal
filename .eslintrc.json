@@ -1,5 +1,6 @@
 {
   "parser": "babel-eslint",
+  "plugins": ["react"],
   "extends": ["airbnb"],
   "env": {
     "browser": true,
@@ -9,6 +10,7 @@
     "no-console": "off",
     "comma-dangle": "off",
     "react/jsx-filename-extension": "on",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "max-len": [1, 120, 2, {"ignoreComments": true}]
   }
 }
