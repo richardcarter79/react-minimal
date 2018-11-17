@@ -14,7 +14,7 @@ Inspiration and guidance for setting this up came from [minimal-react-webpack-ba
 * Express
 
 ## Installation
-* `git clone git@github.com:Dikvega/react-minimal.git`
+* `git clone https://github.com/Dikvega/react-minimal.git`
 * cd react-minimal
 * npm install
 * npm run dev
