@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Dikvega/react-minimal.svg?branch=master)](https://travis-ci.org/Dikvega/react-minimal)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Dikvega/react-minimal.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/dikvega/react-minimal/status.svg)](https://david-dm.org/dikvega/react-minimal)
 
 This is a boilerplate to build a full stack web application using React, Node.js, Express and Webpack. It is also configured with webpack-dev-server, eslint, and babel.
 
