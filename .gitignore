@@ -15,3 +15,6 @@ package-lock.json
 
 #log files
 *.log
+
+#environment files
+.env
