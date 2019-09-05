@@ -1,5 +1,6 @@
 const express = require('express');
 const os = require('os');
+
 const app = express();
 
 const port = 8080;
@@ -10,10 +11,10 @@ app.use(express.static('dist'));
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 }); */
 
-app.get('/api/getUsername', (req, res) => {
+app.get('/getUsername', (req, res) => {
   res.send({ username: os.userInfo().username });
 });
 
 app.listen(port, () => {
-  console.log(`listening on port: ${port}`);
+  console.log(`Express listening on port: ${port}`);
 });

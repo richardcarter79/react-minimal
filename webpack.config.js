@@ -1,10 +1,11 @@
-//  const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 const path = require('path');
-const { HtmlWebpackPlugin } = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const outputDirectory = 'dist';
+const apiPort = 8080;
 
 module.exports = {
   entry: ['babel-polyfill', './src/index.js'],
@@ -15,6 +16,7 @@ module.exports = {
   module: {
     rules: [
       {
+        //tell webpack to run .js and .jsx files through the babel transpiler
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -31,26 +33,33 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 100000,
-            },
-          },
-        ],
-      },
-    ],
+              limit: 100000
+            }
+          }
+        ]
+      }
+    ]
   },
   resolve: {
+    //resolve .jsx extensions to .js files
     extensions: ['*', '.js', '.jsx']
   },
   devServer: {
     port: 3000,
     open: true,
     proxy: {
-      '/api': 'http://localhost:8080'
+      '/api': {
+        target: `http://localhost:${apiPort}`,
+        pathRewrites: { '^/api': '' },
+        changeOrigin: true
+      }
     }
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    //new webpack.ProgressPlugin(),
+    new CleanWebpackPlugin(), //cleans build folders before every build to make sure no old assets are still lingering
     new HtmlWebpackPlugin({
+      // tell webpack where the index.html lives to inject the bundle.js file into during development
       template: './public/index.html',
       favicon: './public/favicon.ico'
     })
