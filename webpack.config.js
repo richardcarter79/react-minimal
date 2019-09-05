@@ -50,7 +50,7 @@ module.exports = {
     proxy: {
       '/api': {
         target: `http://localhost:${apiPort}`,
-        pathRewrites: { '^/api': '' },
+        secure: false,
         changeOrigin: true
       }
     }

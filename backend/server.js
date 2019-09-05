@@ -1,17 +1,19 @@
 const express = require('express');
 const os = require('os');
+const cors = require('cors');
 
 const app = express();
 
 const port = 8080;
-//  middleware to define folder for static files
+
+app.use(cors());
 app.use(express.static('dist'));
 
 /* app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 }); */
 
-app.get('/getUsername', (req, res) => {
+app.get('/api/getUsername', (req, res) => {
   res.send({ username: os.userInfo().username });
 });
 
