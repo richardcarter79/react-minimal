@@ -4,7 +4,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/Dikvega/react-minimal.svg)](https://greenkeeper.io/)
 [![dependencies Status](https://david-dm.org/dikvega/react-minimal/status.svg)](https://david-dm.org/dikvega/react-minimal)
 
-This is a boilerplate to build a full stack web application using React, Node.js, Express and Webpack. It is also configured with webpack-dev-server, eslint, and babel.
+This is a boilerplate to build a full stack web application using React, Redux, Node.js, Express and Webpack. It is also configured with webpack-dev-server, babel, Sass compiler, eslint and prettier.
 
 Inspiration and guidance for setting this up came from [minimal-react-webpack-babel-setup](https://github.com/rwieruch/minimal-react-webpack-babel-setup) and [Simple-react-full-stack](https://github.com/crsandeep/simple-react-full-stack).
 
