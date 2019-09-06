@@ -26,7 +26,7 @@ Inspiration and guidance for setting this up came from [minimal-react-webpack-ba
 * npm install
 * npm run dev
 * visit [http://localhost:3000](http://localhost:3000)
-* Express is running at [https://localhost:8080](http://localhost:8080).  This can be changed in there backend/server.js file, but also needs to be changed in the webpack config proxy.
+* Express is running at [https://localhost:8080](http://localhost:8080).  This can be changed in the /backend/server.js file, but also needs to be changed in the webpack config proxy.
 
 ## Introduction
 
