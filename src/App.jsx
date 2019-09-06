@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/app.css';
+import './style/app.scss';
 import ReactImage from './img/react.png';
 import StuffList from './components/stuffList';
 
