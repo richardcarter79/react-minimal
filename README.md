@@ -12,12 +12,12 @@ Inspiration and guidance for setting this up came from [minimal-react-webpack-ba
 
 ## Features
 
-* React 16
-* Webpack 4+
-* Babel 7
-* Express
-* Redux
-* Sass compiler
+* [React](https://reactjs.org/)
+* [Webpack](https://webpack.js.org/)
+* [Babel](https://babeljs.io/)
+* [Express](https://expressjs.com/)
+* [Redux](https://redux.js.org/)
+* [Sass compiler](https://github.com/webpack-contrib/sass-loader)
 
 ## Installation
 
