@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style/app.scss';
-import ReactImage from './img/react.png';
+import ReactImage from './assets/img/react.png';
 import StuffList from './components/stuffList';
 
 const API = 'http://localhost:8080/api';
