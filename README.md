@@ -40,4 +40,4 @@ In development mode, we have 2 servers running. The front end code will be serve
 
 ### Production mode
 
-In the production mode, we will have only 1 server running. All the client side code will be bundled into static files using webpack and it will be served by the Node.js/Express application.
+In the production mode, we will have only 1 server running. All the client side code will be bundled into static files using webpack and it will be served by the Node.js/Express backend.
